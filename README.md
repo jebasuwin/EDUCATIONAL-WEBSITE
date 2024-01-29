@@ -1,1 +1,1 @@
-# EDUCATIONAL-WEBSITE
+# EduAppp

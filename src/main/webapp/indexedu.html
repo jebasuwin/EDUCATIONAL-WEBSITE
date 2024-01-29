@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="styleedu.css">
+    
+    <script>
+		const header=document.querySelector('header');
+window.addEventListener("scroll",function(){
+    header.classList.toggle("sticky",window.scrollY > 0);
+});
+
+let menu=document.querySelector('#menu-icon');
+let navbar=document.querySelector('.navbar');
+menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('open');
+};
+
+window.onscroll = () =>{
+    menu.classList.remove('bx-x');
+    navbar.classList.remove('open');
+};
+	</script>
+
+</head>
+
+<body>
+<!--    ------header section-----
+-->    <header>
+        <a href="#" class="logo"><i class="fas fa-lightbulb"></i>Edu<span>App</span></a>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+        <div class="header-icons">
+            <a href="#"><i class='bx bx-user'></i></a>
+            <a href="#"><i class='bx bx-heart'></i></a>
+            <a href="#"><i class='bx bx-cart'></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div class="home-text">
+            <h6>Best Online Learning Platform</h6>
+            <h1>Accessible Online Courses For All</h1>
+            <p>Own your future learning skills online</p>
+            <div class="latter">
+                <form>
+                    <input type="email" placeholder="write your Email" required>
+                    <input type="submit" value="Let's start" required>
+                </form>
+            </div>
+        </div> 
+        <div class="home-img">
+            <img src="assets/mainimage.webp">
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="container-box">
+            <div class="container-img">
+                <img src="assets/image1.jpg">
+            </div>
+            <div class="container-text">
+                <h4>5k</h4>
+                <p>Online Courses</p>
+            </div>
+        </div>
+        <div class="container-box">
+            <div class="container-img">
+                <img src="assets/image2.png">
+            </div>
+            <div class="container-text">
+                <h4>5k</h4>
+                <p>Online Courses</p>
+            </div>
+        </div>
+        <div class="container-box">
+            <div class="container-img">
+                <img src="assets/image3.png">
+            </div>
+            <div class="container-text">
+                <h4>5k</h4>
+                <p>Online Courses</p>
+            </div>
+        </div>
+        <div class="container-box">
+            <div class="container-img">
+                <img src="assets/image3.png">
+            </div>
+            <div class="container-text">
+                <h4>5k</h4>
+                <p>Online Courses</p>
+            </div>
+        </div>
+       
+
+    </section>
+    <section class="categories" id="categories">
+        <div class="center-text">
+            <h5>Categories</h5>
+            <h2>Popular Categories</h2>
+        </div> 
+        <div class="categories-content">
+            <div class="box">
+                <img src="assets/cate1.jpg">
+                <h3>Web <br>Development</h3>
+                <p>5 Courses</p>
+            </div>
+            <div class="box">
+                <img src="assets/cate1.jpg">
+                <h3>Angular <br>Development</h3>
+                <p>5 Courses</p>
+            </div>
+            <div class="box">
+                <img src="assets/cate1.jpg">
+                <h3>Back-End</h3>
+                <p>5 Courses</p>
+            </div>
+            <div class="box">
+                <img src="assets/cate1.jpg">
+                <h3>Back-End</h3>
+                <p>5 Courses</p>
+            </div>
+            
+        </div>
+        <div class="main-btn">
+            <a href="#" class="btn">All Categories</a>
+        </div>
+    </section>
+
+
+
+    <section class="courses" id="courses">
+        <div class="center-text">
+            <h5>COURSES</h5>
+            <h2>Explore Popoular Courses</h2>
+        </div>
+        <div class="courses-content">
+            <div class="row">
+                <img src="assets/course image2.jpg">
+                <div class="courses-text">
+                    <h5>$20.00</h5>
+                    <h3>The complete HTML,CSS,JS Course 2022</h3>
+                    <h6>05 hours 15 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{5 Reviews}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <img src="assets/course image2.jpg">
+                <div class="courses-text">
+                    <h5>$20.00</h5>
+                    <h3>The complete Web Development Course 2022</h3>
+                    <h6>05 hours 15 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{5 Reviews}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <img src="assets/course image5.webp">
+                <div class="courses-text">
+                    <h5>$20.00</h5>
+                    <h3>The complete Python Course 2022</h3>
+                    <h6>05 hours 15 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{5 Reviews}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <img src="assets/courseimage6.png">
+                <div class="courses-text">
+                    <h5>$20.00</h5>
+                    <h3>The complete Java Course 2022</h3>
+                    <h6>05 hours 15 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{5 Reviews}</p>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="row">
+                <img src="assets/course image2.jpg">
+                <div class="courses-text">
+                    <h5>$20.00</h5>
+                    <h3>The complete HTML,CSS,JS Course 2022</h3>
+                    <h6>05 hours 15 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{5 Reviews}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <img src="assets/course image2.jpg">
+                <div class="courses-text">
+                    <h5>$20.00</h5>
+                    <h3>The complete Web Development Course 2022</h3>
+                    <h6>05 hours 15 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{5 Reviews}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="main-btn">
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+    </section>
+    
+    
+    
+    <section class="cta">
+        <div class="center-text">
+            <h5>Trusted By</h5>
+            <h2>500+ leading universities and companies</h2>
+        </div>
+        <div class="cta-content">
+            <div class="cta-image">
+                <img src="assets/cta1.png">
+            </div>
+            <div class="cta-image">
+                <img src="assets/cta2.png">
+            </div>
+            
+            <div class="cta-image">
+                <img src="assets/cta4.png">
+            </div>
+            <div class="cta-image">
+                <img src="assets/cta5.png">
+            </div>
+            <div class="cta-image">
+                <img src="assets/cta6.png">
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="about" id="aboutus">
+        <div class="about-img">
+            <img src="assets/about2.png">
+        </div>
+        <div class="about-text">
+            <h2>Want to share ur knowledge?<br> Join us a Mentor</h2>
+            <p>High Definition is video is video of higher resolution and quality than standard-definition
+                .while there is no standardize meaning for high definition,generally any video
+            </p>
+            <h4>Best Courses</h4>
+            <h5>Top Rated Instructors</h5>
+            <a href="#" class="btn">Read More</a>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="main-contact">
+            <div class="contact-content">
+                <p class="logo"><i class="fas fa-lightbulb"></i>Edu<span>App</span></p>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                
+            </div>
+            <div class="contact-content">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </div>
+            <div class="contact-content">
+                
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Instructor</a></li>
+                <li><a href="#">Dashboard</a></li>
+                
+            </div>
+            <div class="contact-content">
+                
+                <li><a href="#">assddggj</a></li>
+                <li><a href="#">praveen@gmail.com</a></li>
+                <li><a href="#">9573390313</a></li>
+            </div>
+        </div>
+
+    </section>
+    <div class="last-text">
+        <p>2023 Praveen.All rights reserved</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
